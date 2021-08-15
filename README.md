@@ -32,7 +32,11 @@ resp = requests.post("https://rafi-predictions.herokuapp.com/predict",
 print(resp.text)
 ```
 The API can also be tested using [Postman](https://www.postman.com) or [Swagger](https://swagger.io) like this
-![Screenshot 2021-07-23 at 3 28 04 PM](https://user-images.githubusercontent.com/61936161/126781850-4c92e148-effa-4987-b4a0-25d06b2be3dd.png)
+
+![](https://user-images.githubusercontent.com/61936161/129472292-14bed561-1136-43e8-8aa4-e26f11291067.png)
+
+![](https://user-images.githubusercontent.com/61936161/129472310-9dd5f63f-ac7e-4f86-8b9b-31fc58f6c1f1.png)
+
 
 
 ## License
