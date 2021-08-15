@@ -73,6 +73,10 @@ class Database:
             raise error("Something went wrong when trying to add record(s)")
 
     def extract_predictions_from_database(self):
+        """
+        Gets the last 10 predictions from the database
+        :return: List of tuples containing the last 10 predictions.
+        """
         try:
             self.cursor.execute("SELECT * FROM Predictions ORDER BY id DESC LIMIT 10")
             return self.cursor.fetchall()

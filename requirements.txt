@@ -21,7 +21,6 @@ Jinja2==3.0.1
 joblib==1.0.1
 keras-nightly==2.5.0.dev2021032900
 Keras-Preprocessing==1.1.2
-lightgbm==3.2.1
 Markdown==3.3.4
 MarkupSafe==2.0.1
 nltk==3.6.2
@@ -34,6 +33,7 @@ psycopg2==2.9.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 python-dateutil==2.8.2
+python-decouple==3.4
 pytz==2021.1
 regex==2021.8.3
 requests==2.26.0
@@ -48,7 +48,6 @@ soupsieve==2.2.1
 tensorboard==2.6.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
-tensorflow==2.5.0
 tensorflow-estimator==2.5.0
 termcolor==1.1.0
 threadpoolctl==2.2.0

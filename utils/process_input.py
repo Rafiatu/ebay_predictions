@@ -8,6 +8,12 @@ with open("files/one_hot_encoder.pkl", "rb") as hot:
 
 
 def process_input(dataframe: dict) -> tuple:
+    """
+    Transforms the reuest data based on the one hot encoder that was used
+    in fitting the training data.
+    :param dataframe: dataframe of the request data info
+    :return: request dataframe and the transformed data
+    """
     data = pd.DataFrame(dataframe)
     transformed_data = one_hot_encoder.transform(data[['title', 'category']]).todense()
     return data, transformed_data
