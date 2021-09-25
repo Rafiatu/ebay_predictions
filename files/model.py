@@ -2,7 +2,7 @@ import pandas as pd
 import pickle
 from scraper import eBay
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import OneHotEncoder
 
 
@@ -37,7 +37,7 @@ data['price'] = data['price'].astype('float32')
 X_train, X_test, y_train, y_test = train_test_split(relevant, data['price'])
 
 
-classifier = LinearRegression()
+classifier = RandomForestRegressor()
 classifier.fit(X_train, y_train)
 
 with open("classifier.pkl", "wb") as file:
